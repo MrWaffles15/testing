@@ -1,4 +1,4 @@
-const json = [
+const gamelist = [
   {
     "title": "Monster Survivors",
     "embed": "https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html",
@@ -1385,5 +1385,4 @@ const json = [
     "tags": "1-player,2d,animal,crazy,free,html5,idle,mobile,mouse",
     "description": "Dino Chaos Idle is an idle clicker game where you give life to the dinosaurs.  You will enable them to create chaos on the surface by resurrecting them.  Many scientists will work with you while you are working underground.  Each of the scientists has their own specific formula for the job."
   }
-]
-const gamelist = JSON.parse(json)
+];
