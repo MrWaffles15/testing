@@ -1,11 +1,15 @@
+const newButton;
+
 function loadiframe(){
   document.getElementById('gameviewer').src = gamelist[0].embed;
 }
 
 function makebuttons(){
-  const newButton = document.createElement('button');
-  newButton.textContent = 'Click me!';
-  document.body.appendChild(newButton);
+  for (let i = 0; i < gamelist.length; i++) {
+    newButton = document.createElement('button');
+    newButton.textContent = gamelist[i];
+    document.body.appendChild(newButton);
+  }
 }
 
 function update(){
