@@ -1,9 +1,9 @@
 var newButton;
 
 function loadiframe(b){
-  document.getElementById('gameviewer').src = gamelist[b].embed;
   document.getElementById('gameviewer').width = 1000;
-  document.getElementById('gameviewer').height = 600
+  document.getElementById('gameviewer').height = 600;
+  document.getElementById('gameviewer').src = gamelist[b].embed;
 }
 
 function makebuttons(){
