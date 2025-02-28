@@ -10,7 +10,7 @@ function loadiframe(i){
 function makebuttons(){
   for (let i = 0; i < gamelist.length; i++) {
     newButton = document.createElement('button');
-    newButton.textContent = gamelist[i].title;
+    newButton.textContent = "loadiframe("+i+")";//gamelist[i].title;
     newButton.onclick = "loadiframe("+i+")";
     document.body.appendChild(newButton);
   }
