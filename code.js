@@ -12,7 +12,7 @@ function makebuttons(){
     newButton = document.createElement('button');
     newButton.textContent = gamelist[i].title;
     newButton.addEventListener("click", bob() {
-      loadiframe(i);
+      loadiframe(number(i));
     });
     document.body.appendChild(newButton);
   }
