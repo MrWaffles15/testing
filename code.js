@@ -1,4 +1,4 @@
-const newButton;
+var newButton;
 
 function loadiframe(){
   document.getElementById('gameviewer').src = gamelist[0].embed;
