@@ -7,7 +7,7 @@ function loadiframe(){
 function makebuttons(){
   for (let i = 0; i < gamelist.length; i++) {
     newButton = document.createElement('button');
-    newButton.textContent = gamelist[i];
+    newButton.textContent = gamelist[i].name;
     document.body.appendChild(newButton);
   }
 }
