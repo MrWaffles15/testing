@@ -11,8 +11,8 @@ function makebuttons(){
   for (let i = 0; i < gamelist.length; i++) {
     newButton = document.createElement('button');
     newButton.textContent = /*"loadiframe("+i+")";*/gamelist[i].title;
-    newButton.id = "button"+i;
+    newButton.id = "gb"+i;
     document.body.appendChild(newButton);
-    document.getElementById('button'+i).onclick = "loadiframe("+i+")";
+    document.getElementById("gb"+i).setAttribute( "onClick", "loadiframe("+i+");" );
   }
 }
