@@ -15,8 +15,8 @@ function makebuttons(){
     newButton.id = "gb"+i;
     document.body.appendChild(newButton);
     document.getElementById("gb"+i).setAttribute( "onClick", "loadiframe("+i+");" );
-    document.getElementById("gb"+i).style.width = '200px';
-    document.getElementById("gb"+i).style.height = '200px';
-    document.getElementById("gb"+i).style.background = 'url(gamelist[i].image) no-repeat 50% 50%';
+    document.getElementById("gb"+i).style.width = '100px';
+    document.getElementById("gb"+i).style.height = '100px';
+    document.getElementById("gb"+i).style.background = 'url('+gamelist[i].image+')';
   }
 }
