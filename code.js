@@ -11,10 +11,12 @@ function loadiframe(i){
 function makebuttons(){
   for (let i = 0; i < gamelist.length; i++) {
     newButton = document.createElement('button');
-    newButton.textContent = /*gamelist[i].title*/"<img src=\""+gamelist[i].image+"></img>";
+    newButton.textContent = gamelist[i].title;
     newButton.id = "gb"+i;
     document.body.appendChild(newButton);
     document.getElementById("gb"+i).setAttribute( "onClick", "loadiframe("+i+");" );
+    document.getElementById("gb"+i).width = "200px";
+    document.getElementById("gb"+i).height = "200px";
     document.getElementById("gb"+i).style.background = gamelist[i].image;
   }
 }
