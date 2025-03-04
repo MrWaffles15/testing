@@ -15,8 +15,8 @@ function makebuttons(){
     newButton.id = "gb"+i;
     document.body.appendChild(newButton);
     document.getElementById("gb"+i).setAttribute( "onClick", "loadiframe("+i+");" );
-    document.getElementById("gb"+i).style.width = '384px';
-    document.getElementById("gb"+i).style.height = '384px';
+    document.getElementById("gb"+i).style.width = '192px';
+    document.getElementById("gb"+i).style.height = '192px';
     document.getElementById("gb"+i).style.background = 'url('+gamelist[i].image+') 100% 100%';
   }
 }
