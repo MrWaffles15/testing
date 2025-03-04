@@ -11,12 +11,12 @@ function loadiframe(i){
 function makebuttons(){
   for (let i = 0; i < gamelist.length; i++) {
     newButton = document.createElement('button');
-    newButton.textContent = gamelist[i].title+i;
+    //newButton.textContent = gamelist[i].title+i;
     newButton.id = "gb"+i;
     document.body.appendChild(newButton);
     document.getElementById("gb"+i).setAttribute( "onClick", "loadiframe("+i+");" );
-    document.getElementById("gb"+i).style.width = '100px';
-    document.getElementById("gb"+i).style.height = '100px';
+    document.getElementById("gb"+i).style.width = '384px';
+    document.getElementById("gb"+i).style.height = '384px';
     document.getElementById("gb"+i).style.background = 'url('+gamelist[i].image+')';
   }
 }
